@@ -1,4 +1,9 @@
 /* CSS styling goes here */
+:root {
+    --bg-color: #738678;
+    --bg-color2: #867381;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -60,8 +65,8 @@ nav {
 }
 
 .navbar-nav li:hover > a {
-    color: #fff;
-    background-color: #007bff;
+    color: var(--bg-color2);
+    background-color: var(--bg-color);
 }
 
 .nav-item {
@@ -87,10 +92,10 @@ nav {
 }
 
 .hero {
-    background-image: url('img/product3.jpg');
+    background-image: url('img/hero/bghero.png');
     background-position: center;
-    background-size: 80vh;
-    height: 400px;
+    background-size: 40vh;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,6 +122,10 @@ nav {
 
 .product img {
     max-width: 100%;
+}
+
+.container {
+    padding-top: 2.5rem;
 }
 
 footer {
