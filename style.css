@@ -101,6 +101,16 @@ nav {
     align-items: center;
 }
 
+.hero2 {
+    background-image: url('img/hero/1.png');
+    background-position: center;
+    /*background-size: 40vh;*/
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero-text {
     color: #fff;
     text-align: center;
