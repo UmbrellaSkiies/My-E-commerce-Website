@@ -138,6 +138,22 @@ nav {
     padding-top: 2.5rem;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bg-color2);
+}
+
 footer {
     font-size: 0.9rem;
 }
