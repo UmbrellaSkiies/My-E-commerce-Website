@@ -5,8 +5,6 @@
 
     <title>My E-commerce Website</title>
 
-    <script src="js/script.js"></script>
-
     <!-- Add Bootstrap CSS file -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -18,306 +16,352 @@
     <!-- Link to your custom CSS file -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Link to your custom JS file -->
+    <script src="js/cart.js"></script>
+
   </head>
-  
+
   <body>
 
+    <!-- ************* NEWSLETTER POPUP ***************
+    <div class="overlay" data-overlay></div>
+
+    <div class="modal" data-modal>
+      <div class="modal-close-overlay" data-modal-overlay></div>
+      <div class="modal-content">
+  
+        <button class="modal-close-btn" data-modal-close>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+  
+        <div class="newsletter-img">
+          <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+        </div>
+  
+        <div class="newsletter">
+          <form action="#">
+            <div class="newsletter-header">
+              <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+              <p class="newsletter-desc">
+                Subscribe the <b>Anon</b> to get latest products and discount update.
+              </p>
+            </div>
+  
+            <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+            <button type="submit" class="btn-newsletter">Subscribe</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+     ****************************************** -->
+
+    <!-- Header Content -->
     <header>
       <h1>My E-commerce Website</h1>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Logo</a>
+    <!-- Main Content -->
+    <main> 
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Navigation Bar Icons -->
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#" id="cart-link"><i class="fas fa-shopping-cart"></i> Cart</a>
-        </li>        
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-heart"></i> Favorites</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-user"></i> My Account</a>
-        </li>
-      </ul>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="#" alt="Logo">Logo</a>
+  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Navigation Bar Icons -->
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="cart-link"><i class="fas fa-shopping-cart"></i> Cart</a>
+          </li>        
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-heart"></i> Favorites</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#"><i class="fas fa-user"></i> My Account</a>
           </li>
         </ul>
-      </div>
-    </nav>
-
-    <!-- Hero section -->
-    <section class="hero bg-primary text-white py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="display-4">Welcome to our store</h1>
-            <p class="lead">Shop the latest products at great prices. Discover our latest products and deals.</p>
-            <a href="#" class="btn btn-primary btn-lg">Shop now</a>
-          </div>
-          <div class="col-md-6">
-            <img src="https://via.placeholder.com/500x300" alt="Hero image" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Main Content -->
-    <h1 style="padding-top: 1em;">Shop Products</h1>    
-    <div class="products">
-
-      <div class="product">
-        <img src="img/product1.jpg" alt="Product 1">
-        <h3>Product 1</h3>
-        <p>$19.99</p>
-        <form action="add_to_cart.php" method="post">
-          <input type="hidden" name="product_id" value="1">
-          <label for="quantity">Quantity:</label>
-          <input type="number" name="quantity" id="quantity" value="1" min="1">
-          <input type="submit" value="Add to cart">
-        </form>
-      </div>
-
-      <div class="product">
-        <img src="img/product2.jpg" alt="Product 2">
-        <h3>Product 2</h3>
-        <p>$29.99</p>
-        <form action="add_to_cart.php" method="post">
-          <input type="hidden" name="product_id" value="1">
-          <label for="quantity">Quantity:</label>
-          <input type="number" name="quantity" id="quantity" value="1" min="1">
-          <input type="submit" value="Add to cart">
-      </form>
-      </div>
-
-      <div class="product">
-        <img src="img/product6.jpg" alt="Product 3">
-        <h3>Product 3</h3>
-        <p>$39.99</p>
-        <form action="add_to_cart.php" method="post">
-          <input type="hidden" name="product_id" value="1">
-          <label for="quantity">Quantity:</label>
-          <input type="number" name="quantity" id="quantity" value="1" min="1">
-          <input type="submit" value="Add to cart">
-      </form>      
-      </div>
-
-      <div class="product">
-        <img src="img/product4.jpg" alt="Product 4">
-        <h3>Product 4</h3>
-        <p>$19.99</p>
-        <form action="add_to_cart.php" method="post">
-          <input type="hidden" name="product_id" value="1">
-          <label for="quantity">Quantity:</label>
-          <input type="number" name="quantity" id="quantity" value="1" min="1">
-          <input type="submit" value="Add to cart">
-        </form>
-      </div>
-
-      <div class="product">
-        <img src="img/product7.jpg" alt="Product 5">
-        <h3>Product 5</h3>
-        <p>$19.99</p>
-        <form action="add_to_cart.php" method="post">
-          <input type="hidden" name="product_id" value="1">
-          <label for="quantity">Quantity:</label>
-          <input type="number" name="quantity" id="quantity" value="1" min="1">
-          <input type="submit" value="Add to cart">
-        </form>
-      </div>
-
-      <div class="product">
-        <img src="img/product8.jpg" alt="Product 6">
-        <h3>Product 6</h3>
-        <p>$19.99</p>
-        <form action="add_to_cart.php" method="post">
-          <input type="hidden" name="product_id" value="1">
-          <label for="quantity">Quantity:</label>
-          <input type="number" name="quantity" id="quantity" value="1" min="1">
-          <input type="submit" value="Add to cart">
-        </form>
-      </div>
-
-      <div class="product">
-        <img src="img/product1.jpg" alt="Product 7">
-        <h3>Product 7</h3>
-        <p>$19.99</p>
-        <form action="add_to_cart.php" method="post">
-          <input type="hidden" name="product_id" value="1">
-          <label for="quantity">Quantity:</label>
-          <input type="number" name="quantity" id="quantity" value="1" min="1">
-          <input type="submit" value="Add to cart">
-        </form>
-      </div>
-
-      <div class="product">
-        <img src="img/product2.jpg" alt="Product 8">
-        <h3>Product 8</h3>
-        <p>$29.99</p>
-        <form action="add_to_cart.php" method="post">
-          <input type="hidden" name="product_id" value="1">
-          <label for="quantity">Quantity:</label>
-          <input type="number" name="quantity" id="quantity" value="1" min="1">
-          <input type="submit" value="Add to cart">
-      </form>
-      </div>
-
-      <div class="product">
-        <img src="img/product6.jpg" alt="Product 9">
-        <h3>Product 9</h3>
-        <p>$39.99</p>
-        <form action="add_to_cart.php" method="post">
-          <input type="hidden" name="product_id" value="1">
-          <label for="quantity">Quantity:</label>
-          <input type="number" name="quantity" id="quantity" value="1" min="1">
-          <input type="submit" value="Add to cart">
-      </form>      
-      </div>
-
-      <div class="product">
-        <img src="img/product4.jpg" alt="Product 10">
-        <h3>Product 10</h3>
-        <p>$19.99</p>
-        <form action="add_to_cart.php" method="post">
-          <input type="hidden" name="product_id" value="1">
-          <label for="quantity">Quantity:</label>
-          <input type="number" name="quantity" id="quantity" value="1" min="1">
-          <input type="submit" value="Add to cart">
-        </form>
-      </div>
-
-      <div class="product">
-        <img src="img/product8.jpg" alt="Product 11">
-        <h3>Product 11</h3>
-        <p>$29.99</p>
-        <form action="add_to_cart.php" method="post">
-          <input type="hidden" name="product_id" value="1">
-          <label for="quantity">Quantity:</label>
-          <input type="number" name="quantity" id="quantity" value="1" min="1">
-          <input type="submit" value="Add to cart">
-      </form>
-      </div>
-
-      <div class="product">
-        <img src="img/product5.jpg" alt="Product 12">
-        <h3>Product 12</h3>
-        <p>$39.99</p>
-        <form action="add_to_cart.php" method="post">
-          <input type="hidden" name="product_id" value="1">
-          <label for="quantity">Quantity:</label>
-          <input type="number" name="quantity" id="quantity" value="1" min="1">
-          <input type="submit" value="Add to cart">
-      </form>      
-      </div>
-    </div>
-
-    <section class="hero2 bg-primary text-white py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <h1 class="display-3">Shop Men's Summer Collection</h1>
-            <p class="lead">Shop the latest summer products at great prices. Discover our latest products and deals.</p>
-            <a href="#" class="btn btn-primary btn-lg">Shop now</a>
-          </div>
-          <div class="col-md-6">
-            <img src="img/hero/1.png" alt="Hero2 image" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="container">
-      <div class="row justify-content-center">    <!-- row justify-content-center // to center the cards -->
-        <div class="col-md-4">
-          <div class="product">
-            <img src="img/product1.jpg" alt="Product 1">
-            <h2>Product Name (1)</h2>
-            <p>Description of product.</p>
-            <p>Price: $19.99</p>
-            <form action="add_to_cart.php" method="post">
-              <input type="hidden" name="product_id" value="1">
-              <label for="quantity">Quantity:</label>
-              <input type="number" name="quantity" id="quantity" value="1" min="1">
-              <input type="submit" value="Add to cart" class="btn btn-primary">
-            </form>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="product">
-            <img src="img/product2.jpg" alt="Product 2">
-            <h2>Product Name (2)</h2>
-            <p>Description of product.</p>
-            <p>Price: $29.99</p>
-            <form action="add_to_cart.php" method="post">
-              <input type="hidden" name="product_id" value="2">
-              <label for="quantity">Quantity:</label>
-              <input type="number" name="quantity" id="quantity" value="1" min="1">
-              <input type="submit" value="Add to cart" class="btn btn-primary">
-            </form>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="product">
-            <img src="img/product6.jpg" alt="Product 3">
-            <h2>Product Name (3)</h2>
-            <p>Description of product.</p>
-            <p>Price: $39.99</p>
-            <form action="add_to_cart.php" method="post">
-              <input type="hidden" name="product_id" value="3">
-              <label for="quantity">Quantity:</label>
-              <input type="number" name="quantity" id="1" value="1" min="1">
-              <input type="submit" value="Add to cart" class="btn btn-primary">
-            </form>          
-          </div>
-        </div>
-      </div>
-    </div>
   
-
-  <!-- Footer -->
-  <footer class="bg-light py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <p>&copy;2023 <a href="index.html">My E-commerce Website</a>. All rights reserved.</p>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-6">
-          <ul class="list-inline text-md-right">
-            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            <li class="list-inline-item"><a href="#">Terms of Use</a></li>
-            <li class="list-inline-item"><a href="#">Contact Us</a></li>
-          </ul>
-          <ul class="list-inline text-md-right">
-            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-          </ul>
+      </nav>
+
+      <!-- Hero section -->
+      <section class="hero bg-primary text-white py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="display-4">Welcome to our store</h1>
+              <p class="lead">Shop the latest products at great prices. Discover our latest products and deals.</p>
+              <a href="#" class="btn btn-primary btn-lg">Shop now</a>
+            </div>
+            <div class="col-md-6">
+              <img src="https://via.placeholder.com/500x300" alt="Hero image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h1 style="padding-top: 1em;">Shop Products</h1>    
+      <div class="products">
+
+        <div class="product">
+          <img src="img/product1.jpg" alt="Product 1">
+          <h3>Product 1</h3>
+          <p>&dollar;19.99</p>
+          <form action="add_to_cart.php" method="post">
+            <input type="hidden" name="product_id" value="1">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1">
+            <input type="submit" value="Add to cart">
+          </form>
+        </div>
+
+        <div class="product">
+          <img src="img/product2.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>&dollar;29.99</p>
+          <form action="add_to_cart.php" method="post">
+            <input type="hidden" name="product_id" value="1">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1">
+            <input type="submit" value="Add to cart">
+        </form>
+        </div>
+
+        <div class="product">
+          <img src="img/product6.jpg" alt="Product 3">
+          <h3>Product 3</h3>
+          <p>&dollar;39.99</p>
+          <form action="add_to_cart.php" method="post">
+            <input type="hidden" name="product_id" value="1">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1">
+            <input type="submit" value="Add to cart">
+        </form>      
+        </div>
+
+        <div class="product">
+          <img src="img/product4.jpg" alt="Product 4">
+          <h3>Product 4</h3>
+          <p>&dollar;19.99</p>
+          <form action="add_to_cart.php" method="post">
+            <input type="hidden" name="product_id" value="1">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1">
+            <input type="submit" value="Add to cart">
+          </form>
+        </div>
+
+        <div class="product">
+          <img src="img/product7.jpg" alt="Product 5">
+          <h3>Product 5</h3>
+          <p>&dollar;19.99</p>
+          <form action="add_to_cart.php" method="post">
+            <input type="hidden" name="product_id" value="1">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1">
+            <input type="submit" value="Add to cart">
+          </form>
+        </div>
+
+        <div class="product">
+          <img src="img/product8.jpg" alt="Product 6">
+          <h3>Product 6</h3>
+          <p>&dollar;19.99</p>
+          <form action="add_to_cart.php" method="post">
+            <input type="hidden" name="product_id" value="1">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1">
+            <input type="submit" value="Add to cart">
+          </form>
+        </div>
+
+        <div class="product">
+          <img src="img/product1.jpg" alt="Product 7">
+          <h3>Product 7</h3>
+          <p>&dollar;19.99</p>
+          <form action="add_to_cart.php" method="post">
+            <input type="hidden" name="product_id" value="1">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1">
+            <input type="submit" value="Add to cart">
+          </form>
+        </div>
+
+        <div class="product">
+          <img src="img/product2.jpg" alt="Product 8">
+          <h3>Product 8</h3>
+          <p>&dollar;29.99</p>
+          <form action="add_to_cart.php" method="post">
+            <input type="hidden" name="product_id" value="1">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1">
+            <input type="submit" value="Add to cart">
+        </form>
+        </div>
+
+        <div class="product">
+          <img src="img/product6.jpg" alt="Product 9">
+          <h3>Product 9</h3>
+          <p>&dollar;39.99</p>
+          <form action="add_to_cart.php" method="post">
+            <input type="hidden" name="product_id" value="1">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1">
+            <input type="submit" value="Add to cart">
+        </form>      
+        </div>
+
+        <div class="product">
+          <img src="img/product4.jpg" alt="Product 10">
+          <h3>Product 10</h3>
+          <p>&dollar;19.99</p>
+          <form action="add_to_cart.php" method="post">
+            <input type="hidden" name="product_id" value="1">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1">
+            <input type="submit" value="Add to cart">
+          </form>
+        </div>
+
+        <div class="product">
+          <img src="img/product8.jpg" alt="Product 11">
+          <h3>Product 11</h3>
+          <p>&dollar;29.99</p>
+          <form action="add_to_cart.php" method="post">
+            <input type="hidden" name="product_id" value="1">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1">
+            <input type="submit" value="Add to cart">
+        </form>
+        </div>
+
+        <div class="product">
+          <img src="img/product5.jpg" alt="Product 12">
+          <h3>Product 12</h3>
+          <p>&dollar;39.99</p>
+          <form action="add_to_cart.php" method="post">
+            <input type="hidden" name="product_id" value="1">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1">
+            <input type="submit" value="Add to cart">
+        </form>      
         </div>
       </div>
-    </div>
-  </footer>
+
+      <section class="hero2 bg-primary text-white py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <h1 class="display-3">Shop Men's Summer Collection</h1>
+              <h2 class="banner-subtitle">Men's latest fashion sale</h2>
+
+              <p class="banner-text">
+                starting at &dollar; <b>20</b>.00
+              </p>
+
+              <a href="#" class="btn btn-primary btn-lg">Shop now</a>
+            </div>
+            <div class="col-md-6">
+              <img src="img/hero/1.png" alt="Hero2 image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="row justify-content-center">    <!-- row justify-content-center // to center the cards -->
+          <div class="col-md-4">
+            <div class="product">
+              <img src="img/product1.jpg" alt="Product 1">
+              <h2>Product Name (1)</h2>
+              <p>Description of product.</p>
+              <p>Price: $19.99</p>
+              <form action="add_to_cart.php" method="post">
+                <input type="hidden" name="product_id" value="1">
+                <label for="quantity">Quantity:</label>
+                <input type="number" name="quantity" id="quantity" value="1" min="1">
+                <input type="submit" value="Add to cart" class="btn btn-primary">
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="product">
+              <img src="img/product2.jpg" alt="Product 2">
+              <h2>Product Name (2)</h2>
+              <p>Description of product.</p>
+              <p>Price: $29.99</p>
+              <form action="add_to_cart.php" method="post">
+                <input type="hidden" name="product_id" value="2">
+                <label for="quantity">Quantity:</label>
+                <input type="number" name="quantity" id="quantity" value="1" min="1">
+                <input type="submit" value="Add to cart" class="btn btn-primary">
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="product">
+              <img src="img/product6.jpg" alt="Product 3">
+              <h2>Product Name (3)</h2>
+              <p>Description of product.</p>
+              <p>Price: $39.99</p>
+              <form action="add_to_cart.php" method="post">
+                <input type="hidden" name="product_id" value="3">
+                <label for="quantity">Quantity:</label>
+                <input type="number" name="quantity" id="1" value="1" min="1">
+                <input type="submit" value="Add to cart" class="btn btn-primary">
+              </form>          
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Content -->
+    <footer class="bg-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy;2023 <a href="index.html">My E-commerce Website</a>. All rights reserved.</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-inline text-md-right">
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+              <li class="list-inline-item"><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="list-inline text-md-right">
+              <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
  
+  <!-- Link to your custom JS file -->
+  <script src=""></script>
 
   </body>
 </html>
