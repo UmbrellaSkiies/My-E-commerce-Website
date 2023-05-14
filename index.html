@@ -1,3 +1,7 @@
+<!--
+ * Copyright 2023 | My E-commerce Website 
+-->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,13 +9,21 @@
 
     <title>My E-commerce Website</title>
 
-    <!-- Add Bootstrap CSS file -->
+    <!-- Add Bootstrap CSS/JS file -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Adding Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Favicon 
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">-->
+
+    <!-- Google font link 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
 
     <!-- Link to your custom CSS file -->
     <link rel="stylesheet" href="style.css">
@@ -62,10 +74,11 @@
     </header>
 
     <!-- Main Content -->
-    <main> 
+    <main>
+      <!-- Navbar section -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-        <a class="navbar-brand" href="#" alt="Logo">Logo</a>
+        <a class="navbar-brand" href="index.html" alt="Logo">Logo</a>
   
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -74,7 +87,7 @@
         <!-- Navigation Bar Icons -->
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#" id="cart-link"><i class="fas fa-shopping-cart"></i> Cart</a>
+            <a class="nav-link" href="cart page.html" id="cart-link"><i class="fas fa-shopping-cart"></i> Cart</a>
           </li>        
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="fas fa-heart"></i> Favorites</a>
@@ -87,7 +100,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Shop</a>
@@ -118,9 +131,127 @@
         </div>
       </section>
 
-      <h1 style="padding-top: 1em;">Shop Products</h1>    
-      <div class="products">
+      <!-- Category section -->
+      <div class="category">
 
+        <div class="container">
+          <h3 style="padding-top: 1.34em; margin-bottom: 0.5em;">Explore categories</h3>
+          
+          <div class="category-item-container has-scrollbar">
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/images/icons/dress.svg" alt="dress & frock" width="30">
+              </div>
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Dress & frock</h3>
+                  <p class="category-item-amount">(53)</p>
+                </div>
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/images/icons/coat.svg" alt="winter wear" width="30">
+              </div>
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Winter wear</h3>
+                  <p class="category-item-amount">(58)</p>
+                </div>
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/images/icons/glasses.svg" alt="glasses & lens" width="30">
+              </div>
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Glasses & lens</h3>
+                  <p class="category-item-amount">(68)</p>
+                </div>
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/images/icons/shorts.svg" alt="shorts & jeans" width="30">
+              </div>
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Shorts & jeans</h3>
+                  <p class="category-item-amount">(84)</p>
+                </div>
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/images/icons/tee.svg" alt="t-shirts" width="30">
+              </div>
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">T-shirts</h3>
+                  <p class="category-item-amount">(35)</p>
+                </div>
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/images/icons/jacket.svg" alt="jacket" width="30">
+              </div>
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Jacket</h3>
+                  <p class="category-item-amount">(16)</p>
+                </div>
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/images/icons/watch.svg" alt="watch" width="30">
+              </div>
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Watch</h3>
+                  <p class="category-item-amount">(27)</p>
+                </div>
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/images/icons/hat.svg" alt="hat & caps" width="30">
+              </div>
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Hat & caps</h3>
+                  <p class="category-item-amount">(39)</p>
+                </div>
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Product section -->
+      <h1 style="padding-top: 1em; margin-left: 1em;">Shop Products</h1>    
+      <div class="products" style="margin-left: 1.5em;">
         <div class="product">
           <img src="img/product1.jpg" alt="Product 1">
           <h3>Product 1</h3>
@@ -270,8 +401,8 @@
         <div class="container">
           <div class="row">
             <div class="col-md-5">
-              <h1 class="display-3">Shop Men's Summer Collection</h1>
-              <h2 class="banner-subtitle">Men's latest fashion sale</h2>
+              <h5 class="display-3">Shop Men's Summer Collection</h5>
+              <h6 class="banner-subtitle">Men's latest fashion sale</h6>
 
               <p class="banner-text">
                 starting at &dollar; <b>20</b>.00
@@ -286,12 +417,12 @@
         </div>
       </section>
 
-      <div class="container">
-        <div class="row justify-content-center">    <!-- row justify-content-center // to center the cards -->
+      <div class="container" style="padding-top: 2.5rem; padding-bottom: 2.5rem;">
+        <div class="row justify-content-center">
           <div class="col-md-4">
             <div class="product">
               <img src="img/product1.jpg" alt="Product 1">
-              <h2>Product Name (1)</h2>
+              <h2>Product Name</h2>
               <p>Description of product.</p>
               <p>Price: $19.99</p>
               <form action="add_to_cart.php" method="post">
@@ -306,7 +437,7 @@
           <div class="col-md-4">
             <div class="product">
               <img src="img/product2.jpg" alt="Product 2">
-              <h2>Product Name (2)</h2>
+              <h2>Product Name</h2>
               <p>Description of product.</p>
               <p>Price: $29.99</p>
               <form action="add_to_cart.php" method="post">
@@ -321,7 +452,7 @@
           <div class="col-md-4">
             <div class="product">
               <img src="img/product6.jpg" alt="Product 3">
-              <h2>Product Name (3)</h2>
+              <h2>Product Name</h2>
               <p>Description of product.</p>
               <p>Price: $39.99</p>
               <form action="add_to_cart.php" method="post">
@@ -337,7 +468,175 @@
     </main>
 
     <!-- Footer Content -->
-    <footer class="bg-light py-3">
+    <footer class="bg-dark py-3">
+
+      <div class="footer-nav">
+        <div class="container">
+          <ul class="footer-nav-list">
+  
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Popular Categories</h2>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Fashion</a>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Electronic</a>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Cosmetic</a>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Health</a>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Watches</a>
+            </li>
+
+          </ul>
+  
+          <ul class="footer-nav-list">
+          
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Products</h2>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Prices drop</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">New products</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Best sales</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Contact us</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Sitemap</a>
+            </li>
+          
+          </ul>
+  
+          <ul class="footer-nav-list">
+          
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Our Company</h2>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Delivery</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Legal Notice</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Terms and conditions</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">About us</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Secure payment</a>
+            </li>
+          
+          </ul>
+  
+          <ul class="footer-nav-list">
+          
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Services</h2>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Prices drop</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">New products</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Best sales</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Contact us</a>
+            </li>
+          
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Sitemap</a>
+            </li>
+          
+          </ul>
+  
+          <ul class="footer-nav-list">
+  
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Contact</h2>
+            </li>
+  
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+  
+              <address class="content">
+                419 State 414 Rte
+                Beaver Dams, New York(NY), 14812, USA
+              </address>
+            </li>
+  
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+  
+              <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+            </li>
+  
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+  
+              <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+      </div>
+  
+      <div class="footer-bottom">
+  
+        <div class="container">
+  
+          <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+  
+          <p class="copyright">
+            Copyright &copy;2023 <a href="index.html">My E-commerce Website</a> all rights reserved.
+          </p>
+  
+        </div>
+  
+      </div>
+
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -358,6 +657,7 @@
           </div>
         </div>
       </div>
+
     </footer>
  
   <!-- Link to your custom JS file -->
