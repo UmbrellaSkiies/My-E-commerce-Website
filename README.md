@@ -1,5 +1,4 @@
 # My-E-commerce-Website
-This is my first e-commerce website
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/UmbrellaSkiies/My-E-commerce-Website)
 ![GitHub stars](https://img.shields.io/github/stars/UmbrellaSkiies/My-E-commerce-Website?style=social)
@@ -8,6 +7,14 @@ This is my first e-commerce website
 
 This is a fully responsive ecommerce website, maximum compatiblities in all mobile devices, built using HTML, CSS, and JavaScript.
 
+## Contents
+
+ * [Prerequisites](#prerequisites)
+ * [Installation](#installation)
+ * [Contributing](#contributing)
+ * [Contact](#contact)
+ * [License](#license)
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
@@ -15,6 +22,7 @@ Before you begin, ensure you have met the following requirements:
 * [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 
 ## Installation
+
 To install **My-E-commerce-Website**, follow these steps:
 
 Linux and macOS:
