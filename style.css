@@ -366,7 +366,7 @@ nav {
 }
 
 .hero {
-    background-image: url('img/hero/bghero.png');
+    background-image: url('assets/images/hero/bghero.png');
     background-position: center;
     background-size: 40vh;
     height: 500px;
@@ -376,7 +376,7 @@ nav {
 }
 
 .hero2 {
-    background-image: url('img/hero/1.png');
+    background-image: url('assets/images/hero/1.png');
     background-position: center;
     /*background-size: 40vh;*/
     height: 550px;
