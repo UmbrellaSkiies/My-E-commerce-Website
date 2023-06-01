@@ -7,6 +7,8 @@
 
 This is a fully responsive ecommerce website, maximum compatiblities in all mobile devices, built using HTML, CSS, and JavaScript.
 
+![Demo Website Image](demo/Demo_Image.png)
+
 ## Contents
 
  * [Prerequisites](#prerequisites)
@@ -14,8 +16,6 @@ This is a fully responsive ecommerce website, maximum compatiblities in all mobi
  * [Contributing](#contributing)
  * [Contact](#contact)
  * [License](#license)
-
-![Demo Website Image](demo/Demo_Image.png)
 
 ## Prerequisites
 
