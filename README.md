@@ -15,6 +15,8 @@ This is a fully responsive ecommerce website, maximum compatiblities in all mobi
  * [Contact](#contact)
  * [License](#license)
 
+![Demo Website Image](demo/Demo_Image.png)
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
