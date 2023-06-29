@@ -2,8 +2,9 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/UmbrellaSkiies/My-E-commerce-Website)
 ![GitHub stars](https://img.shields.io/github/stars/UmbrellaSkiies/My-E-commerce-Website?style=social)
+![GitHub repo file count](https://img.shields.io/github/directory-file-count/UmbrellaSkiies/My-E-commerce-Website)
 ![GitHub forks](https://img.shields.io/github/forks/UmbrellaSkiies/My-E-commerce-Website?style=social)
-![GitHub followers](https://img.shields.io/github/followers/UmbrellaSkiies?label=Followers&logoColor=blue&style=social)
+![GitHub followers](https://img.shields.io/github/followers/UmbrellaSkiies?label=Followers&logoColor=brown&style=social)
 
 This is a fully responsive ecommerce website, maximum compatiblities in all mobile devices, built using HTML, CSS, and JavaScript.
 
